@@ -1,8 +1,11 @@
+import math
+
+from sqlalchemy.orm import Session
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from database import get_db, MovieModel
+from src.database import get_db, MovieModel
 from src.schemas.movies import MovieDetailResponseSchema, MovieListResponseSchema
 
 DEFAULT_PAGE = 1

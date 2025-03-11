@@ -3,6 +3,7 @@ from typing import Optional, List
 
 from pydantic import BaseModel, Configdict
 
+
 class MovieDetailResponseSchema(BaseModel):
     id = int
     name = str
